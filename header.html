@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Formularz dodawania studenta</title>
+</head>
+<body>
+<h1>Formularz dodawania studenta</h1>
+
+<form action="add_student.php" method="post">
+    <label for="imie">Imię:</label>
+    <input name="imie" required type="text"><br>
+
+    <label for="nazwisko">Nazwisko:</label>
+    <input name="nazwisko" required type="text"><br>
+
+    <label for="stypendium">Stypendium:</label>
+    <select name="stypendium">
+        <option value="tak">Tak</option>
+        <option value="nie">Nie</option>
+    </select><br>
+
+    <label for="semestr">Semestr:</label>
+    <input name="semestr" required type="number"><br>
+
+    <input type="submit" value="Dodaj studenta">
+</form>
+</body>
+</html>
